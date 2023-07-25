@@ -1,0 +1,26 @@
+﻿using MagicVilla_VillaAPI.Data;
+using MagicVilla_VillaAPI.Models;
+using MagicVilla_VillaAPI.Models.Dto;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace MagicVilla_VillaAPI.Controllers
+{
+    [Route("api/VilaAPI")]
+    [ApiController]
+    public class VilaAPIController : ControllerBase
+    {
+        [HttpGet("all")]
+        public IEnumerable<VillaDTO> GetVillas() 
+        {
+            return VillaStore.villaList;
+        }
+
+        [HttpGet("{id}")]
+        public VillaDTO GetVilla(int id)
+        {
+            return VillaStore.villaList.FirstOrDefault(u => u.Id == id);
+        }
+
+    }
+}
