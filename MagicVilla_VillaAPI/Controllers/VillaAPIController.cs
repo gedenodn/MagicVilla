@@ -1,4 +1,5 @@
 ﻿using MagicVilla_VillaAPI.Data;
+using MagicVilla_VillaAPI.Logging;
 using MagicVilla_VillaAPI.Models;
 using MagicVilla_VillaAPI.Models.Dto;
 using Microsoft.AspNetCore.Http;
@@ -11,9 +12,9 @@ namespace MagicVilla_VillaAPI.Controllers
     [ApiController]
     public class VilaAPIController : ControllerBase
     {
-        private readonly ILogger<VilaAPIController> _logger;
+        private readonly ILogging _logger;
 
-        public VilaAPIController(ILogger<VilaAPIController> logger)
+        public VilaAPIController(ILogging logger)
         {
             _logger = logger;
         }
@@ -23,7 +24,7 @@ namespace MagicVilla_VillaAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IEnumerable<VillaDTO>> GetVillas() 
         {
-            _logger.LogInformation("Getting all villas");
+            _logger.Log("Getting all villas", "");
             return Ok(VillaStore.villaList);
         }
 
@@ -36,7 +37,7 @@ namespace MagicVilla_VillaAPI.Controllers
 
             if (id==0)
             {
-                _logger.LogError("Get villa error with id" + id);
+                _logger.Log("Get villa error with id" + id,"error");
                 return BadRequest();
             }
             var villa = VillaStore.villaList.FirstOrDefault(u => u.Id == id);
@@ -57,7 +58,8 @@ namespace MagicVilla_VillaAPI.Controllers
             //{
             //    return BadRequest(ModelState);
             //}
-            if(VillaStore.villaList.FirstOrDefault(u=>u.Name.ToLower()==villaDTO.Name.ToLower()) !=null)
+            
+            if (VillaStore.villaList.FirstOrDefault(u=>u.Name.ToLower()==villaDTO.Name.ToLower()) !=null)
             {
                 ModelState.AddModelError("CustomError", "Villa already Exists!");
                 return BadRequest(ModelState);
