@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "enNQk45oum6tyFjbuOALKtPGsxpJjjjxn1ISk1oLZsD2ImxX6FNo6dqAgpsx3gKU5qAawB6LVqWjiTfV9OvU/Q==",
+  "dgSpecHash": "ZS3qNiWa5rni9o3WZidATpkpcrAOtm8p0ZVcdpwKw/l8arxLPa5fBONx0WcubcuVfJxci2HFjqMpM4mGhnS4Qw==",
   "success": true,
   "projectFilePath": "/Users/arturodenbakh/Projects/MagicVilla/MagicVilla_VillaAPI.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,10 @@
     "/Users/arturodenbakh/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/arturodenbakh/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/arturodenbakh/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "/Users/arturodenbakh/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "/Users/arturodenbakh/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/Users/arturodenbakh/.nuget/packages/microsoft.netcore.app.ref/7.0.9/microsoft.netcore.app.ref.7.0.9.nupkg.sha512",
+    "/Users/arturodenbakh/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.9/microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512",
+    "/Users/arturodenbakh/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.9/microsoft.netcore.app.host.osx-arm64.7.0.9.nupkg.sha512"
   ],
   "logs": []
 }

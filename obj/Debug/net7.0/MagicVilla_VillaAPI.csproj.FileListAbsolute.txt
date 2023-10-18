@@ -41,3 +41,4 @@ C:/.program/MagicVilla/MagicVilla_VillaAPI/obj/Debug/net7.0/ref/MagicVilla_Villa
 /Users/arturodenbakh/Projects/MagicVilla/obj/Debug/net7.0/MagicVilla_VillaAPI.dll
 /Users/arturodenbakh/Projects/MagicVilla/obj/Debug/net7.0/refint/MagicVilla_VillaAPI.dll
 /Users/arturodenbakh/Projects/MagicVilla/obj/Debug/net7.0/MagicVilla_VillaAPI.pdb
+/Users/arturodenbakh/Projects/MagicVilla/obj/Debug/net7.0/MagicVilla_VillaAPI.sourcelink.json
