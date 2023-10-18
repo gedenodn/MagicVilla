@@ -1,33 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.program\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {}
+    "/Users/arturodenbakh/Projects/MagicVilla/MagicVilla_VillaAPI.csproj": {}
   },
   "projects": {
-    "C:\\.program\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj": {
+    "/Users/arturodenbakh/Projects/MagicVilla/MagicVilla_VillaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.program\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
+        "projectUniqueName": "/Users/arturodenbakh/Projects/MagicVilla/MagicVilla_VillaAPI.csproj",
         "projectName": "MagicVilla_VillaAPI",
-        "projectPath": "C:\\.program\\MagicVilla\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
-        "packagesPath": "C:\\Users\\Artur Odenbakh\\.nuget\\packages\\",
-        "outputPath": "C:\\.program\\MagicVilla\\MagicVilla_VillaAPI\\obj\\",
+        "projectPath": "/Users/arturodenbakh/Projects/MagicVilla/MagicVilla_VillaAPI.csproj",
+        "packagesPath": "/Users/arturodenbakh/.nuget/packages/",
+        "outputPath": "/Users/arturodenbakh/Projects/MagicVilla/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Artur Odenbakh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/arturodenbakh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +41,10 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
@@ -74,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     }
